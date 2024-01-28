@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.175), rgba(0, 0, 0, 0.7)), url(img/background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        font-size: 14px;
+        flex-direction: column;
+      
+    }
+
+    .card {
+        width: 100%; 
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .navbar {
+        font-size: 18px;
+        flex-direction: column;
+      
+    }
+
+    .card {
+        width: 48%; 
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .navbar {
+        font-size: 20px;
+    }
+
+    .card {
+        width: 30%; 
+    }
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Playball', cursive;
+    font-size: 18px;
+}
+
+#logo {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-right: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover {
+    color: sienna;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /* RESPONSIVE */
+    gap: 10px; /* RESPONSIVE */
+    height: 88%;
+    align-items: center;
+    justify-content: center;
+}
+
+.col {
+    align-items: center;
+}
+
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    color: aliceblue;
+    font-size: 20px;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card .text {
+    position: static;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+h5 a {
+    color: white;
+}
+
+h5 a:hover {
+    color: rgb(165, 42, 42);
+}
+
+.card:hover {
+    transform: translate(-10px);
+}
+
+h5 {
+    color: aliceblue;
+    text-shadow: 0 0 5px #999;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    font-family: 'Playball', cursive;
+}

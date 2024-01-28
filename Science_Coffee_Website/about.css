@@ -1,0 +1,152 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+/*Navbar*/
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Playball', cursive;
+    font-size: 18px;
+}
+
+#logo {
+
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-right: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+.nav-links a:hover {
+    color: sienna;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.main_container {
+    background-color: #11272B;
+    display: flex;
+}
+
+#image{
+    width: 90%;
+    height: auto;
+    float: right;
+}
+.text_container{
+    margin: 30px;
+    width: 150%;
+    height: auto;
+    position: relative;
+    left: 10%;
+    
+}
+
+h1{
+    margin: 0;
+    padding:0;
+    color: white;
+    font-family: 'Playball', cursive;
+    position: relative;
+    left: 30%;
+    font-size: 50px;
+}
+p{
+    color: white;
+    font-family: 'Playball', cursive;
+    font-size: 17px;
+
+}
+#kahve_tanesi{
+ width: 350px;
+ height: auto;
+ position: relative;
+ bottom: 25%;
+ left: 37%;
+
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    font-family: 'Playball', cursive;
+}
+/* For tablets */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .nav-links li {
+        margin-right: 10px;
+    }
+
+    .main_container {
+        flex-direction: row;
+    }
+
+    .text_container {
+        width: 100%;
+        left: 0;
+    }
+
+    #image {
+        width: 100%;
+    }
+
+    #kahve_tanesi {
+        width: 200px;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .nav-links li {
+        margin-right: 5px;
+    }
+
+    .main_container {
+        flex-direction: row;
+    }
+
+    .text_container {
+        width: 100%;
+        left: 0;
+    }
+
+    #image {
+        width: 100%;
+    }
+
+    #kahve_tanesi {
+        width: 100px;
+        left: 0;
+        bottom: 0;
+    }
+}

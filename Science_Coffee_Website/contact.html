@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <img src="img/logo3.png" alt="logo" id="logo" />
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+      </ul>
+    </nav>
+
+    <div class="main_container">
+      <img src="img/contact2.png" alt="2" id="small_image" />
+      <div class="contact_container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.784467812419!2d32.84310840943474!3d39.92383928537556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d3499c9fb54279%3A0x8fe2231aa94d6a16!2sAnkara%20Bilim%20%C3%9Cniversitesi%20Maltepe%20Kamp%C3%BCs%C3%BC!5e0!3m2!1str!2str!4v1702208302406!5m2!1str!2str"
+          width="600"
+          height="250"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          id="map"
+        ></iframe>
+        <hr />
+        <p>Our primary communication method is E-Mail.</p>
+        <p>E-mail: sciencecoffee@gmail.com</p>
+        <p>Mobile Phone: +90 505 404 3 202</p>
+        <p>Working Hours: 09.30 – 18.00</p>
+        <hr />
+        <div class="form">
+          <h3>Contact Form</h3>
+          <form method="POST" action="contact.php">
+            <label for="name">Name:</label>
+            <input type="text" id="user_name" name="user_name" required /><br />
+            <label for="user_surname">Surname:</label>
+            <input
+              type="text"
+              id="user_surname"
+              name="surname"
+              required
+            /><br />
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="user_email"
+              name="user_email"
+              required
+            /><br />
+            <label for="phone">Phone:</label>
+            <input
+              type="number"
+              id="user_phone"
+              name="user_phone"
+              required
+            /><br />
+            <label for="Message">Message:</label><br />
+            <textarea
+              name="user_message"
+              id="user_message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <input type="submit" value="Send" id="button" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2023 Science Coffee. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

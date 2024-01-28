@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.175),rgba(0,0,0,0.7)), url(img/smoothie\ background.png) ;
+    background-position: center ;
+    background-size: cover;
+}
+
+/*Navbar*/
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Playball', cursive;
+    font-size: 18px;
+}
+
+#logo {
+
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-right: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+.nav-links a:hover {
+    color: sienna;
+    text-decoration: underline;
+    font-size: 20px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap; /* RESPONSIVE */
+    gap: 10px; /* RESPONSIVE */
+    height: 88% ;
+    align-items: center;
+    justify-content: center;
+}
+.col {
+    align-items: center;
+  
+}
+
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    color: aliceblue;
+    font-size: 20px;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+   
+}
+
+.card .text {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: aliceblue;
+    font-size: 20px;   
+}
+
+    
+
+.card:hover {
+    transform: translate(-10px);
+}
+
+.card:hover .text {
+    opacity: 1; 
+  }
+
+
+  h5{
+    color:white;
+    text-shadow: 0 0 5px #999;
+}
+
+
+.card .text h5 {
+    margin-bottom: 10px;
+    opacity: 1; 
+    transition: opacity 0.5s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .card .text p.details {
+    opacity: 0; 
+    transition: opacity 0.5s;
+}
+
+.card:hover .text h5 {
+    opacity: 0; 
+}
+
+.card:hover .text p.details {
+    opacity: 1; 
+}
+
+  .card p.details {
+    font-size: 16px;
+    margin: 5px 0;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .card p.details::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(106, 7, 55, 0); 
+    transition: background-color 0.3s ease-out;
+    z-index: -1; 
+  }
+  
+  .card:hover p.details::before {
+    background-color: rgba(106, 31, 1, 0.4); 
+  }
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    font-family: 'Playball', cursive;
+}
